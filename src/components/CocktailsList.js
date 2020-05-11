@@ -7,13 +7,16 @@ export default class CocktailsList extends Component {
   };
 
   render() {
+    const { cocktailCategories } = this.props;
+
     return (
-      <div className="cocktail-category-list">
+      <div className="cocktail-categories">
         <h2>Cocktail Categories</h2>
-        <ul>
-          <li>{this.props.cocktailCategories[0]}</li>
-          <li>{this.props.cocktailCategories[1]}</li>
-          <li>{this.props.cocktailCategories[2]}</li>
+        <ul className="category-list">
+          { !cocktailCategories && "Loading..."}
+          { cocktailCategories && 
+            cocktailCategories.map(category => <li key={category}>{category}</li>)
+          }
         </ul>
       </div>
     );
