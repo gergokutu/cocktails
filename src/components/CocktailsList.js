@@ -15,7 +15,7 @@ export default class CocktailsList extends Component {
         <ul className="category-list">
           { !cocktailCategories && "Loading..."}
           { cocktailCategories && 
-            cocktailCategories.map(category => <li key={category}>{category}</li>)
+            cocktailCategories.map(category => <li key={category.strCategory}>{category.strCategory}</li>)
           }
         </ul>
       </div>
