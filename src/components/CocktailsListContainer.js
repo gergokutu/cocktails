@@ -3,7 +3,7 @@ import CocktailsList from './CocktailsList';
 
 export default class CocktailsListContainer extends Component {
   state = {
-    categories: null
+    categories: []
   };
 
   componentDidMount() {
