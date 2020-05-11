@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 export default class CocktailsImages extends Component {
   static propTypes = {
-
+    cocktails: PropTypes.array.isRequired
   };
 
   render() {
