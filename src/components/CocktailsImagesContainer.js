@@ -8,6 +8,8 @@ export default class CocktailsImagesContainer extends Component {
 
   componentDidMount() {
     // const { categoryName } = this.props.match.params;
+    // I have to use the this.props.location to get the right format
+    // for the fetch URL easily...
     const categoryName = this.props.location.pathname.slice(12);
     console.log("categoryName:", categoryName);
 
