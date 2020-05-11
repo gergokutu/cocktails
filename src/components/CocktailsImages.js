@@ -13,7 +13,7 @@ export default class CocktailsImages extends Component {
 
     return (
       <div key={idDrink}>
-        <img src={strDrinkThumb} alt="Cocktail" />
+        <img src={`${strDrinkThumb}/preview`} alt="Cocktail" />
         <p>{strDrink}</p>
       </div>
     );
