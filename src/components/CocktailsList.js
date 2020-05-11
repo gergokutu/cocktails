@@ -9,7 +9,7 @@ export default class CocktailsList extends Component {
 
   renderCategory = (category) => {
     const { strCategory } = category;
-
+    
     return (
       <li key={strCategory}>
         <Link to={`/categories/${strCategory}`}>{strCategory}</Link>
@@ -25,7 +25,7 @@ export default class CocktailsList extends Component {
         <h2>Cocktail Categories</h2>
         <ul className="category-list">
           { !cocktailCategories.length && "Loading..."}
-          { cocktailCategories && 
+          { cocktailCategories.length && 
             cocktailCategories.map(this.renderCategory)
           }
         </ul>
