@@ -1,0 +1,20 @@
+.cocktail-details .instructions {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.ingredients {
+  margin: 4rem;
+}
+
+.ingredients > h3 {
+  font-size: 1.5rem;
+}
+
+.ingredients > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

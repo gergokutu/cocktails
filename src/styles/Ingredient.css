@@ -1,0 +1,7 @@
+.ingredient {
+  list-style: none;
+}
+
+.ingredient > p {
+  font-size: 1.3rem;
+}
