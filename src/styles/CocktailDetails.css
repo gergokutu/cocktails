@@ -1,3 +1,8 @@
+.cocktail-details {
+  text-align: center;
+  
+}
+
 .cocktail-details .instructions {
   margin: 1rem;
   font-size: 1.2rem;
@@ -8,6 +13,7 @@
 }
 
 .ingredients > h3 {
+  margin-left: 2.3rem;
   font-size: 1.5rem;
 }
 
@@ -16,5 +22,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 60%;
+  height: auto;
+}
+
+.cocktail-details > img {
+  max-height: 70vh;
+  width: auto;
+}
+
+.instructions {
+  display: inline-block;
+  max-height: 50vh;
+  width: auto;
 }
 

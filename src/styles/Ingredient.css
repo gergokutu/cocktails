@@ -2,6 +2,12 @@
   list-style: none;
 }
 
+.ingredient > img {
+  margin: 2rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px  rgba(236, 101, 11, 0.911), 0 0 2rem rgba(236, 101, 11, 0.911), 0 0 1rem rgba(236, 101, 11, 0.911);
+}
+
 .ingredient > p {
   font-size: 1.3rem;
 }

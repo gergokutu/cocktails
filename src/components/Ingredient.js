@@ -7,7 +7,7 @@ export default function Ingredient(props) {
   return (
     <li className="ingredient">
       <img
-        src={`https://www.thecocktaildb.com/images/ingredients/${encodeURIComponent(ingredient)}-Medium.png`}
+        src={`https://www.thecocktaildb.com/images/ingredients/${encodeURIComponent(ingredient)}-Small.png`}
         alt={ingredient}
       />
       <p>{ingredient}</p>

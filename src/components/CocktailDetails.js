@@ -17,10 +17,8 @@ export default function CocktailDetails(props) {
     <div className="cocktail-details">
       <h2>{strDrink}</h2>
       
-      <div className="cocktail-image">
-        <img src={strDrinkThumb} alt={strDrink}/>
-      </div>
-
+      <img src={strDrinkThumb} alt={strDrink}/>
+      
       <p className="instructions">{strInstructions}</p>
 
       <div className="ingredients">
