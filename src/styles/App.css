@@ -25,3 +25,7 @@ i:nth-child(2) {
   color: rgb(0, 247, 255);
   transform: rotate(135deg);
 }
+
+.back-link, .category-link {
+  margin: 1.5rem;
+}

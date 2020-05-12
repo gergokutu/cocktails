@@ -1,0 +1,45 @@
+.category-images {
+  display: flex;
+  margin: 4rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+}
+
+.category-images > a {
+  height: 20rem;
+  width: 20rem;
+  text-decoration: none;
+}
+
+.category-images > a:active {
+  color: rgba(236, 101, 11, 0.911);
+}
+
+.category-images > a > img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px  rgba(236, 101, 11, 0.911), 0 0 2rem rgba(236, 101, 11, 0.911), 0 0 1rem rgba(236, 101, 11, 0.911);
+}
+
+.category-images > a > img:hover {
+  box-shadow: 5px 5px 10px  rgb(209, 2, 88), 0 0 2rem rgb(0, 247, 255), 0 0 1rem rgb(172, 7, 248);
+}
+
+
+.category-images > a > p {
+  color: rgb(209, 2, 88);
+  font-size: 1.3rem;
+}
+
+.category-images > a > p:hover {
+  color: rgb(0, 247, 255);
+  text-shadow: 5px 5px 10px  rgba(236, 101, 11, 0.911), 0 0 2rem rgba(236, 101, 11, 0.911), 0 0 1rem rgba(236, 101, 11, 0.911);
+}
+
+.category-images > a > p:active {
+  color: rgba(236, 101, 11, 0.911);
+}
