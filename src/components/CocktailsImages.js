@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import '../styles/CocktailsImages.css';
 
 export default class CocktailsImages extends Component {
   static propTypes = {
@@ -26,13 +27,13 @@ export default class CocktailsImages extends Component {
       <div className="category">
         <h2>Cocktails of the {category} category:</h2>
 
-        <div className="back-link">
-          <Link to="/">Go back to the index</Link>
-        </div>
-
         <div className="category-images">
           { !cocktails.length && "Loading..." }
           { cocktails.length && cocktails.map(this.renderCocktail)}
+        </div>
+
+        <div className="back-link">
+          <Link to="/">Go back to the index</Link>
         </div>
       </div>
     );
