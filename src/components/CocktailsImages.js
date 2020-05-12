@@ -25,9 +25,11 @@ export default class CocktailsImages extends Component {
     return (
       <div className="category">
         <h2>Cocktails of the {category} category:</h2>
+
         <div className="back-link">
-          <Link to="/">Go back to the index.</Link>
+          <Link to="/">Go back to the index</Link>
         </div>
+
         <div className="category-images">
           { !cocktails.length && "Loading..." }
           { cocktails.length && cocktails.map(this.renderCocktail)}

@@ -6,7 +6,8 @@ export default function CocktailDetails(props) {
     idDrink,
     strDrink,
     strDrinkThumb,
-    strInstructions } = props.cocktail !== null && props.cocktail[0];
+    strInstructions,
+    strCategory } = props.cocktail !== null && props.cocktail[0];
   
   const { ingredients } = props;
   
@@ -29,8 +30,12 @@ export default function CocktailDetails(props) {
         </ul>
       </div>
 
+      <div className="category-link">
+          <Link to={`/categories/${strCategory}`}>Go back to the category</Link>
+      </div>
+
       <div className="back-link">
-          <Link to="/">Go back to the index.</Link>
+          <Link to="/">Go back to the index</Link>
       </div>
     </div>
   );
