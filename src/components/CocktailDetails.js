@@ -25,8 +25,8 @@ export default function CocktailDetails(props) {
       <div className="ingredients">
         <h3>Ingredients:</h3>
         <ul>
-          { ingredients.map((ingredient, index) => (
-            <Ingredient ingredient={ingredient} index={index} />))
+          { ingredients.map(ingredient => (
+            <Ingredient ingredient={ingredient} key={idDrink} />))
           }
         </ul>
       </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 
 export default function Ingredient(props) {
-  const { ingredient, index } = props;
+  const { ingredient } = props;
 
   return (
-    <li className="ingredient" key={index}>
+    <li className="ingredient">
       <div className="ingredient-image">
         <img
           src={`https://www.thecocktaildb.com/images/ingredients/${encodeURIComponent(ingredient)}-Small.png`}
