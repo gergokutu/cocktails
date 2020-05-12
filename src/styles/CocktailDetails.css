@@ -34,11 +34,17 @@
   margin-right: auto;
   width: 50%;
   min-width: 30%;
+  border-radius: 5%;
+  border: 0.5rem solid  rgba(236, 101, 11, 0.911);
+  box-shadow: 
+    5px 5px 10px  rgba(236, 101, 11, 0.911),
+    0 0 2rem rgba(236, 101, 11, 0.911);
 }
 
 .instructions {
   display: inline-block;
-  max-height: 50vh;
-  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
