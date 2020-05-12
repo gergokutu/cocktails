@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
 html {
   background-image: linear-gradient(to bottom right, rgba(255, 126, 41, 0.911), rgb(251, 251, 17));
   background-attachment: fixed;
+  font-family: 'Pangolin', cursive;
 }
+
+
