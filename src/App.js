@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import CocktailsListContainer from './components/CocktailsListContainer';
 import { Route } from 'react-router-dom';
 import CocktailsImagesContainer from './components/CocktailsImagesContainer';
