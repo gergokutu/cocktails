@@ -2,4 +2,23 @@
   margin: 1rem;
   list-style: none;
   font-size: x-large;
+  /* if the li height bigger than the hover over font size
+  the list elements won't move */
+  height: 2.2rem;
+}
+
+/* As Link component transpiled to <a> */
+.category-list > li > a {
+  color: rgb(209, 2, 88);
+  text-decoration: none;
+}
+
+.category-list > li > a:hover {
+  color: rgb(0, 247, 255);
+  font-size: 2rem;
+  text-shadow: 5px 5px 10px  rgb(209, 2, 88), 0 0 2rem rgb(0, 247, 255), 0 0 1rem rgb(172, 7, 248);
+}
+
+.category-list > li > a:active {
+  color: rgb(255, 251, 0);
 }
