@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Ingredient from './Ingredient';
 
 export default function CocktailDetails(props) {
   const { 
@@ -25,7 +26,7 @@ export default function CocktailDetails(props) {
         <h3>Ingredients:</h3>
         <ul>
           { ingredients.map((ingredient, index) => (
-            <li key={index}>{ingredient}</li>))
+            <Ingredient ingredient={ingredient} index={index} />))
           }
         </ul>
       </div>
