@@ -6,7 +6,7 @@ export default class CocktailDetails extends Component {
   render() {
     return (
       <div>
-        <h2>DETAILS COMES HERE...</h2>
+        <h2>{this.props.match.params.cocktailID} DETAILS COMES HERE...</h2>
         <Link to="/">Go back to index</Link>
       </div>
     );

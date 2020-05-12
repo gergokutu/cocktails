@@ -12,10 +12,10 @@ export default class CocktailsImages extends Component {
     const { idDrink, strDrink, strDrinkThumb } = cocktail;
 
     return (
-      <div key={idDrink}>
+      <Link key={idDrink} to={`/cocktails/${idDrink}`}>
         <img src={`${strDrinkThumb}/preview`} alt="Cocktail" />
         <p>{strDrink}</p>
-      </div>
+      </Link>
     );
   };
 
