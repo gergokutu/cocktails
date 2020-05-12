@@ -23,6 +23,7 @@ export default class CocktailsList extends Component {
     return (
       <div className="cocktail-categories">
         <h2>Cocktail Categories</h2>
+
         <ul className="category-list">
           { !cocktailCategories.length && "Loading..."}
           { cocktailCategories.length && 
