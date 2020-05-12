@@ -1,10 +1,27 @@
 .App {
   height: 100%;
   min-height: 100vh;
-  
   text-align: center;
 }
 
+h1, h2 {
+  margin: 4rem;
+}
+
 h1 {
-  margin: 2rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+i:nth-child(1) {
+  color: rgb(209, 2, 88);
+  transform: rotate(315deg);
+}
+
+i:nth-child(2) {
+  color: rgb(0, 247, 255);
+  transform: rotate(135deg);
 }
