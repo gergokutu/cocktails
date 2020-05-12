@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default class CocktailDetails extends Component {
-  render() {
-    return (
-      <div>
-        <h2>DETAILS COMES HERE...</h2>
-        <Link to="/">Go back to index</Link>
-      </div>
-    );
-  }
+export default function CocktailDetails(props) {
+  return (
+    <div>
+      <h2>DETAILS COMES HERE...</h2>
+      <Link to="/">Go back to index</Link>
+    </div>
+  );
 }
