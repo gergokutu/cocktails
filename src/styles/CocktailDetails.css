@@ -1,0 +1,44 @@
+.cocktail-details {
+  text-align: center;
+  
+}
+
+.cocktail-details .instructions {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.ingredients {
+  margin: 4rem;
+}
+
+.ingredients > h3 {
+  margin-left: 2.3rem;
+  font-size: 1.5rem;
+}
+
+.ingredients > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  min-width: 35%;
+}
+
+.cocktail-details > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 30%;
+}
+
+.instructions {
+  display: inline-block;
+  max-height: 50vh;
+  width: auto;
+}
+

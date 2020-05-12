@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Ingredient from './Ingredient';
+import '../styles/CocktailDetails.css';
 
 export default function CocktailDetails(props) {
   const { 
@@ -16,14 +17,13 @@ export default function CocktailDetails(props) {
     <div className="cocktail-details">
       <h2>{strDrink}</h2>
       
-      <div className="cocktail-image">
-        <img src={strDrinkThumb} alt={strDrink}/>
-      </div>
-
+      <img src={strDrinkThumb} alt={strDrink}/>
+      
       <p className="instructions">{strInstructions}</p>
 
       <div className="ingredients">
         <h3>Ingredients:</h3>
+
         <ul>
           { ingredients.map(ingredient => (
             <Ingredient ingredient={ingredient} key={idDrink} />))

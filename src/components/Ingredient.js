@@ -1,16 +1,15 @@
 import React from 'react';
+import '../styles/Ingredient.css';
 
 export default function Ingredient(props) {
   const { ingredient } = props;
 
   return (
     <li className="ingredient">
-      <div className="ingredient-image">
-        <img
-          src={`https://www.thecocktaildb.com/images/ingredients/${encodeURIComponent(ingredient)}-Small.png`}
-          alt={ingredient}
-        />
-      </div>
+      <img
+        src={`https://www.thecocktaildb.com/images/ingredients/${encodeURIComponent(ingredient)}-Small.png`}
+        alt={ingredient}
+      />
       <p>{ingredient}</p>
     </li>
   );
