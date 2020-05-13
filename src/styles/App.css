@@ -29,11 +29,3 @@ i:nth-child(2) {
 .back-link, .category-link {
   margin: 1.5rem;
 }
-
-.back-link > a:hover, .category-link > a:hover {
-  color: rgb(228, 147, 72);
-}
-
-.back-link > a:active, .category-link > a:active {
-  color: rgb(255, 8, 0);
-}
