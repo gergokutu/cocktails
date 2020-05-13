@@ -2,32 +2,31 @@ import React from 'react';
 
 const Pagination = (props) => {
   const pageNumbers = [];
-  const totalPhotos = 12;
-  const photosPerPage = 4;
+  // const totalCocktails = 12;
+  const cocktailsPerPage = 8;
+  const { totalCocktails, paginate } = props;
 
-  const paginate = () => {};
-
-  for (let i = 1; i <= Math.ceil(totalPhotos / photosPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalCocktails / cocktailsPerPage); i++) {
     pageNumbers.push(i);
   }
 
   return (
-    <div class="pagination">
+    <div className="pagination">
       <nav>
-        <ul>
-          <li>« Next</li>
+       
+          <button>« Next</button>
           {/* { !pageNumbers.length && "" } */}
           { pageNumbers.map(number => {
             return (
-              <li key={number}>
-                <a onClick={() => paginate(number)} href="!#">
+
+                <button key={number} onClick={() => paginate(number)}>
                   {number}
-                </a>
-              </li>)
+                </button>
+              )
             })
           }
-          <li>Prev »</li>
-        </ul>
+          <button>Prev »</button>
+       
       </nav>
     </div>
   );

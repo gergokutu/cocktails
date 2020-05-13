@@ -12,7 +12,6 @@ export default class CocktailsImagesContainer extends Component {
     // I have to use the this.props.location to get the right format
     // for the fetch URL easily...
     const categoryName = this.props.location.pathname.slice(12);
-    console.log("categoryName:", categoryName);
 
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(categoryName)}`)
       .then(response => response.json())
@@ -22,6 +21,10 @@ export default class CocktailsImagesContainer extends Component {
 
   updateCocktails = cocktailsToUpdate => this.setState({ cocktails: cocktailsToUpdate });
 
+  paginate = (number) => {
+    console.log("paginate:", number)
+  };
+
   render() {
     const categoryName = this.props.location.pathname.slice(12);
     // change the / to space with regex
@@ -30,7 +33,7 @@ export default class CocktailsImagesContainer extends Component {
     return (
       <div>
         <CocktailsImages category={cocktailName} cocktails={this.state.cocktails} />
-        <Pagination />
+        <Pagination totalCocktails={this.state.cocktails.length} paginate={this.paginate} />
       </div>
     );
   }
