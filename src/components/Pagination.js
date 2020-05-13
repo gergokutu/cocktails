@@ -2,11 +2,13 @@ import React from 'react';
 
 const Pagination = (props) => {
   const pageNumbers = [];
-  const totalPhotos = 20;
-  const photosPerPage = 5;
+  const totalPhotos = 12;
+  const photosPerPage = 4;
 
-  for (let i = 1; i < Math.ceil(totalPhotos, photosPerPage); i++) {
-    pageNumbers.push[i];
+  const paginate = () => {};
+
+  for (let i = 1; i <= Math.ceil(totalPhotos / photosPerPage); i++) {
+    pageNumbers.push(i);
   }
 
   return (
@@ -15,7 +17,15 @@ const Pagination = (props) => {
         <ul>
           <li>« Next</li>
           {/* { !pageNumbers.length && "" } */}
-          { pageNumbers.map(number => <li key={number}>{number}</li>) }
+          { pageNumbers.map(number => {
+            return (
+              <li key={number}>
+                <a onClick={() => paginate(number)} href="!#">
+                  {number}
+                </a>
+              </li>)
+            })
+          }
           <li>Prev »</li>
         </ul>
       </nav>

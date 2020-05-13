@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CocktailsImages from './CocktailsImages';
+import Pagination from './Pagination';
 
 export default class CocktailsImagesContainer extends Component {
   state = {
@@ -27,7 +28,10 @@ export default class CocktailsImagesContainer extends Component {
     const cocktailName = categoryName.replace(/_/g," ");
 
     return (
-      <CocktailsImages category={cocktailName} cocktails={this.state.cocktails} />
+      <div>
+        <CocktailsImages category={cocktailName} cocktails={this.state.cocktails} />
+        <Pagination />
+      </div>
     );
   }
 }
