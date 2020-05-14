@@ -8,7 +8,7 @@ import CocktailDetailsContainer from './components/CocktailDetailsContainer';
 function App() {
   return (
     <div className="App">
-      <h1> <i class="fas fa-cocktail"></i> COCKTAILS AROUND THE CLOCK <i class="fas fa-cocktail"></i> </h1>
+      <h1> <i className="fas fa-cocktail"></i> COCKTAILS AROUND THE CLOCK <i className="fas fa-cocktail"></i> </h1>
       <main>
         <Route exact path="/" component={CocktailsListContainer} />
         <Route path="/categories/:categoryName" component={CocktailsImagesContainer} />
