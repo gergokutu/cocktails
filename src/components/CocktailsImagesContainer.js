@@ -4,7 +4,9 @@ import Pagination from './Pagination';
 
 export default class CocktailsImagesContainer extends Component {
   state = {
-    cocktails: [] 
+    cocktails: [],
+    cocktailsPerPage: 8,
+    pageNumber: 1 
   };
 
   componentDidMount() {
@@ -21,19 +23,38 @@ export default class CocktailsImagesContainer extends Component {
 
   updateCocktails = cocktailsToUpdate => this.setState({ cocktails: cocktailsToUpdate });
 
-  paginate = (number) => {
-    console.log("paginate:", number)
+  paginate = () => {
+    const pageNumbers = [];
+    const { cocktails, cocktailsPerPage } = this.state;
+
+    for (let i = 1; i <= Math.ceil(cocktails.length / cocktailsPerPage); i++) {
+     pageNumbers.push(i);
+    }
+
+    return pageNumbers;
+  };
+
+  updatePageNumber = (number) => this.setState({ pageNumber: number});
+
+  showPage = () => {
+    const { cocktails, cocktailsPerPage, pageNumber } = this.state;
+    return cocktails.slice((pageNumber - 1) * cocktailsPerPage, pageNumber * cocktailsPerPage);
   };
 
   render() {
     const categoryName = this.props.location.pathname.slice(12);
     // change the / to space with regex
     const cocktailName = categoryName.replace(/_/g," ");
+    const cocktailsOnPage = this.showPage();
+    console.log("cocktails on page:", cocktailsOnPage)
 
     return (
       <div>
-        <CocktailsImages category={cocktailName} cocktails={this.state.cocktails} />
-        <Pagination totalCocktails={this.state.cocktails.length} paginate={this.paginate} />
+        <CocktailsImages category={cocktailName} cocktails={cocktailsOnPage} />
+        <Pagination
+          pageNumbers={this.paginate()}
+          updatePageNumber={this.updatePageNumber}
+        />
       </div>
     );
   }

@@ -29,7 +29,7 @@ export default class CocktailsImages extends Component {
 
         <div className="category-images">
           { !cocktails.length && "Loading..." }
-          { cocktails.length && cocktails.map(this.renderCocktail)}
+          { cocktails.length !== 0 && cocktails.map(this.renderCocktail)}
         </div>
 
         <div className="back-link">
