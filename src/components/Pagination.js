@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Pagination = (props) => {
-  const { updatePageNumber, pageNumbers } = props
+  const { updatePageNumber, pageNumbers, nextPage, prevPage } = props
 
   return (
     <nav className="pagination">
-      <button>« Next</button>
+      <button key="prev" onClick={() => prevPage()}>« Prev</button>
       { !pageNumbers.length && "" }
       { pageNumbers.length &&
         pageNumbers.map(number => {
@@ -16,7 +16,7 @@ const Pagination = (props) => {
           )
         })
       }
-      <button>Prev »</button>
+      <button key="next" onClick={() => nextPage()}>Next »</button>
     </nav>
   );
 }

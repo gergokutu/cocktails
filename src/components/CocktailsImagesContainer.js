@@ -35,6 +35,8 @@ export default class CocktailsImagesContainer extends Component {
   };
 
   updatePageNumber = (number) => this.setState({ pageNumber: number});
+  nextPage = () => { this.setState({ pageNumber: this.state.pageNumber + 1}) };
+  prevPage = () => { this.setState({ pageNumber: this.state.pageNumber - 1}) };
 
   showPage = () => {
     const { cocktails, cocktailsPerPage, pageNumber } = this.state;
@@ -46,7 +48,7 @@ export default class CocktailsImagesContainer extends Component {
     // change the / to space with regex
     const cocktailName = categoryName.replace(/_/g," ");
     const cocktailsOnPage = this.showPage();
-    console.log("cocktails on page:", cocktailsOnPage)
+    // console.log("cocktails on page:", cocktailsOnPage)
 
     return (
       <div>
@@ -54,6 +56,8 @@ export default class CocktailsImagesContainer extends Component {
         <Pagination
           pageNumbers={this.paginate()}
           updatePageNumber={this.updatePageNumber}
+          nextPage={this.nextPage}
+          prevPage={this.prevPage}
         />
       </div>
     );
