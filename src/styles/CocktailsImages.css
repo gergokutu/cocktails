@@ -9,8 +9,8 @@
 }
 
 .category-images > a {
-  height: 20rem;
-  width: 20rem;
+  height: auto;
+  width: 9rem;
   text-decoration: none;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .category-images > a > img {
-  max-height: 50%;
+  max-height: 30%;
   height: 15rem;
   /* max-width: auto; */
   width: auto;
@@ -33,7 +33,7 @@
 
 .category-images > a > p {
   color: rgb(209, 2, 88);
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .category-images > a > p:hover {
