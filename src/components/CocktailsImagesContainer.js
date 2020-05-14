@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 export default class CocktailsImagesContainer extends Component {
   state = {
     cocktails: [],
-    cocktailsPerPage: 8,
+    cocktailsPerPage: 4,
     pageNumber: 1 
   };
 
@@ -35,8 +35,35 @@ export default class CocktailsImagesContainer extends Component {
   };
 
   updatePageNumber = (number) => this.setState({ pageNumber: number});
-  nextPage = () => { this.setState({ pageNumber: this.state.pageNumber + 1}) };
-  prevPage = () => { this.setState({ pageNumber: this.state.pageNumber - 1}) };
+
+  prevPage = () => { 
+    const { pageNumber, cocktails, cocktailsPerPage } = this.state;
+    const allPages = cocktails.length / cocktailsPerPage;
+
+    if (pageNumber > 1 ) this.setState({ pageNumber: pageNumber - 1}); 
+    if ( pageNumber > allPages ) this.setState({ pageNumber: allPages});
+    // if (pageNumber <= 1) {
+    //   this.setState({ pageNumber: 1});
+    // } else if (pageNumber >= cocktails.length / cocktailsPerPage ) {
+    //   this.setState({ pageNumber: cocktails.length / cocktailsPerPage + 1 })
+    // } else {
+    //   this.setState({ pageNumber: pageNumber - 1})
+    // }
+  };
+
+  nextPage = () => { 
+    const { pageNumber, cocktails, cocktailsPerPage } = this.state;
+    const allPages = Math.ceil(cocktails.length / cocktailsPerPage);
+    console.log("allPages: ", allPages);
+
+    if (pageNumber > allPages - 1) {
+      this.setState({ pageNumber: allPages })
+    } else if (pageNumber < 1) {
+      this.setState({ pageNumber: 1 });
+    } else {
+      this.setState({ pageNumber: pageNumber + 1});
+    }
+   };
 
   showPage = () => {
     const { cocktails, cocktailsPerPage, pageNumber } = this.state;
