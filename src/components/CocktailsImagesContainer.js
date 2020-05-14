@@ -38,23 +38,20 @@ export default class CocktailsImagesContainer extends Component {
 
   prevPage = () => { 
     const { pageNumber, cocktails, cocktailsPerPage } = this.state;
-    const allPages = cocktails.length / cocktailsPerPage;
+    const allPages = Math.floor(cocktails.length / cocktailsPerPage);
 
-    if (pageNumber > 1 ) this.setState({ pageNumber: pageNumber - 1}); 
-    if ( pageNumber > allPages ) this.setState({ pageNumber: allPages});
-    // if (pageNumber <= 1) {
-    //   this.setState({ pageNumber: 1});
-    // } else if (pageNumber >= cocktails.length / cocktailsPerPage ) {
-    //   this.setState({ pageNumber: cocktails.length / cocktailsPerPage + 1 })
-    // } else {
-    //   this.setState({ pageNumber: pageNumber - 1})
-    // }
+    if (pageNumber < 2 ) {
+      this.setState({ pageNumber: 1})
+    } else if (pageNumber > allPages) {
+      this.setState({ pageNumber: allPages})
+    } else {
+      this.setState({ pageNumber: pageNumber - 1 })
+    }
   };
 
   nextPage = () => { 
     const { pageNumber, cocktails, cocktailsPerPage } = this.state;
     const allPages = Math.ceil(cocktails.length / cocktailsPerPage);
-    console.log("allPages: ", allPages);
 
     if (pageNumber > allPages - 1) {
       this.setState({ pageNumber: allPages })
