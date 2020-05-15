@@ -1,3 +1,11 @@
+.all-ingredients {
+
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .cocktail-details > img {
   /* display: block; */
   border-radius: 5%;
@@ -10,6 +18,8 @@
 .back-link, .back-to-category {
   /* background-color: thistle; */
   /* margin-top: 2em; */
+  position: fixed;
+  bottom: 6%;
   width: 100%;
   text-align: center;
 }
@@ -18,4 +28,6 @@
   /* background-color: thistle; */
   position: fixed;
   bottom: 3%;
+  /* left: 30%;
+  width: 100%; */
 }

@@ -24,11 +24,11 @@ export default function CocktailDetails(props) {
       <div className="ingredients">
         <h3>Ingredients:</h3>
 
-        <ul>
+        <div className="all-ingredients">
           { ingredients.map(ingredient => (
             <Ingredient ingredient={ingredient} key={idDrink} />))
           }
-        </ul>
+        </div>
       </div>
 
       <div className="back-to-category">
