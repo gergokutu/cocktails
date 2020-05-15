@@ -22,9 +22,8 @@ export default class CocktailsList extends Component {
     const { cocktailCategories } = this.props;
 
     return (
-      <div className="cocktail-categories">
+      <div className="container">
         <h2>Cocktail Categories</h2>
-
         <ul className="category-list">
           { !cocktailCategories.length && "Loading..."}
           { cocktailCategories.length && 

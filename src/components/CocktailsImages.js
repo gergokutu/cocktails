@@ -25,7 +25,7 @@ export default class CocktailsImages extends Component {
 
     return (
       <div className="category">
-        <h2>Cocktails of the {category} category:</h2>
+        <h2>'{category}s'</h2>
 
         <div className="category-images">
           { !cocktails.length && "Loading..." }

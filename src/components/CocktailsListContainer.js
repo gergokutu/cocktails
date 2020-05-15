@@ -17,7 +17,14 @@ export default class CocktailsListContainer extends Component {
 
   render() {
     return (
-      <CocktailsList cocktailCategories={this.state.categories} />
+      <div>
+        <h1 className="title">
+          <i className="fas fa-cocktail"></i>
+          COCKTAILS AROUND
+          <i className="fas fa-cocktail"></i>
+        </h1>
+        <CocktailsList cocktailCategories={this.state.categories} />
+      </div>
     );
   }
 }

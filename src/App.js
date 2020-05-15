@@ -8,12 +8,9 @@ import CocktailDetailsContainer from './components/CocktailDetailsContainer';
 function App() {
   return (
     <div className="App">
-      <h1> <i className="fas fa-cocktail"></i> COCKTAILS AROUND THE CLOCK <i className="fas fa-cocktail"></i> </h1>
-      <main>
         <Route exact path="/" component={CocktailsListContainer} />
         <Route path="/categories/:categoryName" component={CocktailsImagesContainer} />
         <Route path="/cocktails/:cocktailID" component={CocktailDetailsContainer} />
-      </main>
     </div>
   );
 }

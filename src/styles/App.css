@@ -1,6 +1,18 @@
-/* .App {
+.App {
+  /* background-color: teal; */
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: space-evenly;
+  align-items: stretch;
+  height: 100vh;
+
+  position: relative;
+}
+
+.title {
   text-align: center;
-} */
+}
 
 i:nth-child(1) {
   color: rgb(209, 2, 88);
