@@ -11,15 +11,15 @@
 
 h2 {
   font-size: 4em;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin-top: 0rem;
+  margin-bottom: 4rem;
 }
 
 .category-list > div {
   font-size: 2em;
   /* background-color: wheat; */
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 
 /* As Link component transpiled to <a> */
