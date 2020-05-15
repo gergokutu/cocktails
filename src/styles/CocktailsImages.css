@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .category-images > a {
@@ -12,12 +14,20 @@
   color: rgba(236, 101, 11, 0.911);
 }
 
+/* cocktail image */
 .category-images > a > img {
   border-radius: 10%;
   box-shadow:
     5px 5px 10px  rgba(236, 101, 11, 0.911),
     0 0 2rem rgba(236, 101, 11, 0.911),
     0 0 1rem rgba(236, 101, 11, 0.911);
+  
+  max-height: 300px;
+  height: 35em;
+  max-width: 300px;
+  width: auto;
+
+  margin: 30px;
 }
 
 .category-images > a > img:hover {
@@ -27,8 +37,10 @@
     0 0 1rem rgb(172, 7, 248);
 }
 
+/* cocktail name */
 .category-images > a > p {
   color: rgb(209, 2, 88);
+  width: 50% 
 }
 
 .category-images > a > p:hover {

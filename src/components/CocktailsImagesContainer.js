@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 export default class CocktailsImagesContainer extends Component {
   state = {
     cocktails: [],
-    cocktailsPerPage: 10,
+    cocktailsPerPage: 4,
     pageNumber: 1 
   };
 

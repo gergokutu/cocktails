@@ -2,24 +2,21 @@
   /* background-color: tomato; */
   position: absolute;
   top: 100%;
-  bottom: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   text-align: center;
 }
 
 h2 {
-  font-size: 4em;
-  margin-top: 0rem;
+  font-size: 3.5em;
+  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
 .category-list > div {
   font-size: 2em;
   /* background-color: wheat; */
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
+  margin: 0.5em;
 }
 
 /* As Link component transpiled to <a> */
@@ -38,5 +35,5 @@ h2 {
 }
 
 footer {
-  margin-top: 3.5em;
+  margin-top: 5em;
 }
