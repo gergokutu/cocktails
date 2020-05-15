@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 html {
-  background-image: linear-gradient(to bottom right, rgba(255, 126, 41, 0.911), rgb(251, 251, 17));
+  background-image:
+    linear-gradient(to top left,
+        rgb(51, 243, 243),
+        rgb(189, 255, 255),
+        rgb(189, 234, 255),
+        rgb(240, 255, 255)
+      );
+
   background-attachment: fixed;
   font-family: 'Pangolin', cursive;
+}
+
+body {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  position: relative;
 }
 
 
