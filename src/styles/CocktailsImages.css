@@ -41,6 +41,14 @@
   }
 }
 
+@media only screen and (min-width: 400px) {
+  .category-images > a > img {
+    max-height: 400px;
+    max-width: 500px;
+    height: 200px;
+  }
+}
+
 .category-images > a > img:hover {
   box-shadow:
     5px 5px 10px  rgb(209, 2, 88),
