@@ -6,14 +6,11 @@
   /* justify-content: center; */
 }
 
+/* image-container */
 .category-images > a {
   text-decoration: none;
-  /* margin: 70px; */
-  /* position: relative;
-  left: 0;
-  top: 50%;
-  width: 25%;
-  text-align: center; */
+  display: block;
+  
 }
 
 .category-images > a:active {
