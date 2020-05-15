@@ -12,9 +12,11 @@ export default class CocktailsList extends Component {
     const { strCategory } = category;
     
     return (
-      <li key={strCategory}>
-        <Link to={`/categories/${strCategory}`}>{strCategory}</Link>
-      </li>
+      <div key={strCategory}>
+        <Link to={`/categories/${strCategory}`}>
+          {strCategory}
+        </Link>
+      </div>
     );
   };
 
@@ -22,15 +24,15 @@ export default class CocktailsList extends Component {
     const { cocktailCategories } = this.props;
 
     return (
-      <div className="cocktail-categories">
+      <div className="container">
         <h2>Cocktail Categories</h2>
-
-        <ul className="category-list">
+        <div id="cat" className="category-list">
           { !cocktailCategories.length && "Loading..."}
           { cocktailCategories.length && 
             cocktailCategories.map(this.renderCategory)
           }
-        </ul>
+        </div>
+        <footer>FOOTER</footer>
       </div>
     );
   }

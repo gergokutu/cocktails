@@ -1,46 +1,85 @@
 .category-images {
   display: flex;
-  margin: 1rem;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* align-items: stretch; */
   align-content: space-around;
+  /* justify-content: center; */
 }
 
+/* image-container */
 .category-images > a {
-  height: 20rem;
-  width: 20rem;
   text-decoration: none;
+  display: block;
+  
 }
 
 .category-images > a:active {
   color: rgba(236, 101, 11, 0.911);
 }
 
+/* cocktail image */
 .category-images > a > img {
-  max-height: 50%;
-  height: 15rem;
-  /* max-width: auto; */
-  width: auto;
   border-radius: 10%;
-  box-shadow: 5px 5px 10px  rgba(236, 101, 11, 0.911), 0 0 2rem rgba(236, 101, 11, 0.911), 0 0 1rem rgba(236, 101, 11, 0.911);
+  box-shadow:
+    5px 5px 10px  rgba(236, 101, 11, 0.911),
+    0 0 2rem rgba(236, 101, 11, 0.911),
+    0 0 1rem rgba(236, 101, 11, 0.911);
+  
+  max-height: 130px;
+  height: 35em;
+  width: auto;
+
+  margin: 30px;
+}
+
+/* change cocktail pics together with screen > if bigger */
+@media only screen and (min-width: 550px) {
+  .category-images > a > img {
+    max-height: 400px;
+    max-width: 500px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .category-images > a > img {
+    max-height: 400px;
+    max-width: 500px;
+    height: 200px;
+  }
 }
 
 .category-images > a > img:hover {
-  box-shadow: 5px 5px 10px  rgb(209, 2, 88), 0 0 2rem rgb(0, 247, 255), 0 0 1rem rgb(172, 7, 248);
+  box-shadow:
+    5px 5px 10px  rgb(209, 2, 88),
+    0 0 2rem rgb(0, 247, 255),
+    0 0 1rem rgb(172, 7, 248);
 }
 
+/* cocktail name */
 .category-images > a > p {
   color: rgb(209, 2, 88);
-  font-size: 1.3rem;
+  width: 100%;
+  
+  /* background-color: tomato; */
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em; 
+  font-size: 16px;
 }
 
 .category-images > a > p:hover {
   color: rgb(0, 247, 255);
-  text-shadow: 5px 5px 10px  rgba(236, 101, 11, 0.911), 0 0 2rem rgba(236, 101, 11, 0.911), 0 0 1rem rgba(236, 101, 11, 0.911);
+  text-shadow:
+    5px 5px 10px  rgba(236, 101, 11, 0.911),
+    0 0 2rem rgba(236, 101, 11, 0.911),
+    0 0 1rem rgba(236, 101, 11, 0.911);
 }
 
 .category-images > a > p:active {
   color: rgba(236, 101, 11, 0.911);
+}
+
+.category > h2 {
+  text-align: center;
 }

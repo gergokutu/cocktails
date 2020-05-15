@@ -1,39 +1,5 @@
-.cocktail-details {
-  text-align: center;
-  
-}
-
-.cocktail-details .instructions {
-  margin: 1rem;
-  font-size: 1.2rem;
-}
-
-.ingredients {
-  margin: 4rem;
-}
-
-.ingredients > h3 {
-  margin-left: 2.3rem;
-  font-size: 1.5rem;
-}
-
-.ingredients > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  min-width: 35%;
-}
-
 .cocktail-details > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  min-width: 30%;
+  /* display: block; */
   border-radius: 5%;
   border: 0.5rem solid  rgba(236, 101, 11, 0.911);
   box-shadow: 
@@ -41,10 +7,15 @@
     0 0 2rem rgba(236, 101, 11, 0.911);
 }
 
-.instructions {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.back-link, .back-to-category {
+  /* background-color: thistle; */
+  /* margin-top: 2em; */
+  width: 100%;
+  text-align: center;
 }
 
+.back-link {
+  /* background-color: thistle; */
+  position: fixed;
+  bottom: 3%;
+}

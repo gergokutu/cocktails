@@ -25,7 +25,7 @@ export default class CocktailsImages extends Component {
 
     return (
       <div className="category">
-        <h2>Cocktails of the {category} category:</h2>
+        <h2>'{category}s'</h2>
 
         <div className="category-images">
           { !cocktails.length && "Loading..." }
@@ -33,7 +33,8 @@ export default class CocktailsImages extends Component {
         </div>
 
         <div className="back-link">
-          <Link to="/">Go back to the index</Link>
+          {/* to index page cat ID */}
+          <Link to="/#cat">Go back to the index</Link>
         </div>
       </div>
     );
