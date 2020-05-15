@@ -6,7 +6,7 @@ const Pagination = (props) => {
 
   return (
     <nav className="pagination">
-      <li key="prev" onClick={() => prevPage()}>« Prev</li>
+      <button key="prev" onClick={() => prevPage()}>Prev</button>
       { !pageNumbers.length && "" }
       { pageNumbers.length &&
         pageNumbers.map(number => {
@@ -17,7 +17,7 @@ const Pagination = (props) => {
           )
         })
       }
-      <li key="next" onClick={() => nextPage()}>Next »</li>
+      <button key="next" onClick={() => nextPage()}>Next</button>
     </nav>
   );
 }

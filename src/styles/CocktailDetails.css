@@ -1,16 +1,3 @@
-/* .instructions {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
-
-/* .ingredients > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
-
 .cocktail-details > img {
   /* display: block; */
   border-radius: 5%;
@@ -20,5 +7,15 @@
     0 0 2rem rgba(236, 101, 11, 0.911);
 }
 
+.back-link, .back-to-category {
+  /* background-color: thistle; */
+  /* margin-top: 2em; */
+  width: 100%;
+  text-align: center;
+}
 
-
+.back-link {
+  /* background-color: thistle; */
+  position: fixed;
+  bottom: 3%;
+}

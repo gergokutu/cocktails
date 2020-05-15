@@ -2,12 +2,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  align-content: space-around;
+  /* justify-content: center; */
 }
 
 .category-images > a {
   text-decoration: none;
+  /* margin: 70px; */
+  /* position: relative;
+  left: 0;
+  top: 50%;
+  width: 25%;
+  text-align: center; */
 }
 
 .category-images > a:active {
@@ -22,12 +28,20 @@
     0 0 2rem rgba(236, 101, 11, 0.911),
     0 0 1rem rgba(236, 101, 11, 0.911);
   
-  max-height: 300px;
+  max-height: 130px;
   height: 35em;
-  max-width: 300px;
   width: auto;
 
   margin: 30px;
+}
+
+/* change cocktail pics together with screen > if bigger */
+@media only screen and (min-width: 550px) {
+  .category-images > a > img {
+    max-height: 400px;
+    max-width: 500px;
+    height: 200px;
+  }
 }
 
 .category-images > a > img:hover {
@@ -40,7 +54,13 @@
 /* cocktail name */
 .category-images > a > p {
   color: rgb(209, 2, 88);
-  width: 50% 
+  width: 100%;
+  
+  /* background-color: tomato; */
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em; 
+  font-size: 16px;
 }
 
 .category-images > a > p:hover {
@@ -53,4 +73,8 @@
 
 .category-images > a > p:active {
   color: rgba(236, 101, 11, 0.911);
+}
+
+.category > h2 {
+  text-align: center;
 }

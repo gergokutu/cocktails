@@ -31,7 +31,7 @@ export default function CocktailDetails(props) {
         </ul>
       </div>
 
-      <div className="category-link">
+      <div className="back-to-category">
           <Link to={`/categories/${strCategory}`}>Go back to the category</Link>
       </div>
 
