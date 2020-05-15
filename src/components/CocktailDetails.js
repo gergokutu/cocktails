@@ -36,7 +36,7 @@ export default function CocktailDetails(props) {
       </div>
 
       <div className="back-link">
-          <Link to="/">Go back to the index</Link>
+          <Link to="/#cat">Go back to the index</Link>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ export default class CocktailsList extends Component {
     return (
       <div className="container">
         <h2>Cocktail Categories</h2>
-        <div className="category-list">
+        <div id="cat" className="category-list">
           { !cocktailCategories.length && "Loading..."}
           { cocktailCategories.length && 
             cocktailCategories.map(this.renderCategory)
