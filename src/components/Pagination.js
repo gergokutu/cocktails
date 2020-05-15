@@ -1,22 +1,23 @@
 import React from 'react';
+import '../styles/Pagination.css'
 
 const Pagination = (props) => {
   const { updatePageNumber, pageNumbers, nextPage, prevPage } = props
 
   return (
     <nav className="pagination">
-      <button key="prev" onClick={() => prevPage()}>« Prev</button>
+      <li key="prev" onClick={() => prevPage()}>« Prev</li>
       { !pageNumbers.length && "" }
       { pageNumbers.length &&
         pageNumbers.map(number => {
         return (
-            <button key={number} onClick={() => updatePageNumber(number)}>
+            <li key={number} onClick={() => updatePageNumber(number)}>
               {number}
-            </button>
+            </li>
           )
         })
       }
-      <button key="next" onClick={() => nextPage()}>Next »</button>
+      <li key="next" onClick={() => nextPage()}>Next »</li>
     </nav>
   );
 }
