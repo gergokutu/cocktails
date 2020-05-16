@@ -6,11 +6,12 @@
   /* justify-content: center; */
 }
 
-/* image-container */
 .category-images > a {
   text-decoration: none;
-  display: block;
-  
+  background-color: rgb(248, 11, 248);
+  /* display: inline-block; */
+  /* position: relative; */
+  /* width:50% */
 }
 
 .category-images > a:active {
@@ -25,29 +26,29 @@
     0 0 2rem rgba(236, 101, 11, 0.911),
     0 0 1rem rgba(236, 101, 11, 0.911);
   
-  max-height: 130px;
-  height: 35em;
-  width: auto;
-
+  height: 15em;
   margin: 30px;
+  width: auto;
 }
 
 /* change cocktail pics together with screen > if bigger */
-@media only screen and (min-width: 550px) {
+@media only screen and (max-width: 400px) {
   .category-images > a > img {
-    max-height: 400px;
-    max-width: 500px;
-    height: 200px;
+    max-height: 100px;
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 800px) {
   .category-images > a > img {
-    max-height: 400px;
-    max-width: 500px;
-    height: 200px;
+    max-height: 150px;
   }
 }
+
+/* @media only screen and (min-width: 1050px) {
+  .category-images > a > img {
+    max-height: 250px;
+  }
+} */
 
 .category-images > a > img:hover {
   box-shadow:
