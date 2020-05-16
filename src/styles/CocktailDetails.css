@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
 }
 
 .cocktail-details > img {
-  height: 30em;
+  height: 35em;
   border-radius: 5%;
   border: 0.5rem solid  rgba(236, 101, 11, 0.911);
   box-shadow: 
@@ -19,11 +21,13 @@
   }
 }
 
-.back-link, .back-to-category {
-  width: 100%;
+.back-to-category, .back-to-index  {
+  margin: 2em;
 }
 
-.back-link {
-  width: 100%;
-  margin: 20px;
+.instructions {
+  position: relative;
+  top: 0;
+  left: 25%;
+  width: 50%;
 }
