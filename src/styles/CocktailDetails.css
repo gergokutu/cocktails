@@ -1,5 +1,13 @@
+.all-ingredients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
 .cocktail-details > img {
-  /* display: block; */
+  height: 35em;
   border-radius: 5%;
   border: 0.5rem solid  rgba(236, 101, 11, 0.911);
   box-shadow: 
@@ -7,15 +15,19 @@
     0 0 2rem rgba(236, 101, 11, 0.911);
 }
 
-.back-link, .back-to-category {
-  /* background-color: thistle; */
-  /* margin-top: 2em; */
-  width: 100%;
-  text-align: center;
+@media only screen and (max-width: 500px) {
+  .cocktail-details > img {
+    height: 20em;
+  }
 }
 
-.back-link {
-  /* background-color: thistle; */
-  position: fixed;
-  bottom: 3%;
+.back-to-category, .back-to-index  {
+  margin: 2em;
+}
+
+.instructions {
+  position: relative;
+  top: 0;
+  left: 25%;
+  width: 50%;
 }

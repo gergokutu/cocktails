@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CocktailsImages from './CocktailsImages';
 import Pagination from './Pagination';
+import { Link } from 'react-router-dom';
 
 export default class CocktailsImagesContainer extends Component {
   state = {
@@ -83,6 +84,10 @@ export default class CocktailsImagesContainer extends Component {
           nextPage={this.nextPage}
           prevPage={this.prevPage}
         />
+        <div className="back-to-index">
+          {/* to index page cat ID */}
+          <Link to="/">Go back to the index</Link>
+        </div>
       </div>
     );
   }

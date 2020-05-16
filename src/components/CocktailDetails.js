@@ -24,19 +24,19 @@ export default function CocktailDetails(props) {
       <div className="ingredients">
         <h3>Ingredients:</h3>
 
-        <ul>
+        <div className="all-ingredients">
           { ingredients.map(ingredient => (
             <Ingredient ingredient={ingredient} key={idDrink} />))
           }
-        </ul>
+        </div>
       </div>
 
       <div className="back-to-category">
           <Link to={`/categories/${strCategory}`}>Go back to the category</Link>
       </div>
 
-      <div className="back-link">
-          <Link to="/#cat">Go back to the index</Link>
+      <div className="back-to-index">
+          <Link to="/">Go back to the index</Link>
       </div>
     </div>
   );
