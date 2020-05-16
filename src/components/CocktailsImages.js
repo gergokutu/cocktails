@@ -34,7 +34,7 @@ export default class CocktailsImages extends Component {
 
         <div className="back-link">
           {/* to index page cat ID */}
-          <Link to="/#cat">Go back to the index</Link>
+          <Link to="/">Go back to the index</Link>
         </div>
       </div>
     );

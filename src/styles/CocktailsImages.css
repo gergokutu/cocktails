@@ -3,15 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-around;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .category-images > a {
   text-decoration: none;
-  background-color: rgb(248, 11, 248);
-  /* display: inline-block; */
-  /* position: relative; */
-  /* width:50% */
 }
 
 .category-images > a:active {
