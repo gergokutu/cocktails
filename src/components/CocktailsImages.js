@@ -31,11 +31,6 @@ export default class CocktailsImages extends Component {
           { !cocktails.length && "Loading..." }
           { cocktails.length !== 0 && cocktails.map(this.renderCocktail)}
         </div>
-
-        <div className="back-link">
-          {/* to index page cat ID */}
-          <Link to="/#cat">Go back to the index</Link>
-        </div>
       </div>
     );
   }
