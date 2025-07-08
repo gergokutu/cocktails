@@ -35,6 +35,12 @@
 		console.log("***** Optimizely optOut API - TEST *****");
 	</script> -->
 	<!-- Optimizely snippet manually -->
+	<script>
+		window.optimizely = window.optimizely || [];
+		window["optimizely"].push({
+  			"type": "holdEvents"
+		});
+	</script>
 	<script src="https://cdn.optimizely.com/js/19741936895.js"></script>
 	<!-- Optimizely snippet manually -->
 	<!-- Google Tag Manager -->
